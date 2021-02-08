@@ -1,7 +1,7 @@
 # vtiger-clicktocall
 
 
-phonedetailview path
+PhoneDetailView.tpl path
 /var/www/html/vtigercrm/layouts/vlayout/modules/Vtiger/uitypes
 
 
