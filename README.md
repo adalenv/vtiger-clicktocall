@@ -39,3 +39,17 @@ call function placed to PhoneDetailView.tpl
 		}
 	</script
 ```
+
+
+
+
+
+asterisk manager.conf
+
+```
+[test]
+secret = 1234
+read = system,call,log,verbose,command,agent,user,originate
+write = system,call,log,verbose,command,agent,user,originate
+permit=192.168.69.200
+```
