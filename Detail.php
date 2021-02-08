@@ -262,6 +262,7 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 		//print_r($currentUser->get('phone_crm_extension'));
 
 		$mysip=explode("cc",$currentUser->get('user_name'));
+		print_r($recordModel->get('phone'));
 		//$mysip=$currentUser->get('phone_crm_extension');
 		$viewer->assign('MYSIP',$mysip[1]);
 
