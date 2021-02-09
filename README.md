@@ -12,6 +12,10 @@ Detail.php path:
 /var/www/html/vtigercrm/modules/Vtiger/views
 
 
+to add call button
+/var/www/html/vtigercrm/modules\Leads\models\DetailView.php
+
+
 
 ---------------------------------------------------------------------------
 
