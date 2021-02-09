@@ -57,3 +57,20 @@ read = system,call,log,verbose,command,agent,user,originate
 write = system,call,log,verbose,command,agent,user,originate
 permit=192.168.69.200
 ```
+
+
+
+
+call button
+
+```
+///modifikim
+			$basicActionLink = array(
+				'linktype' => 'DETAILVIEWBASIC',
+				'linklabel' => 'Call',
+				'linkurl' => 'call();',
+				'linkicon' => ''
+			);
+			$linkModelList['DETAILVIEWBASIC'][] = Vtiger_Link_Model::getInstanceFromValues($basicActionLink);
+
+```
