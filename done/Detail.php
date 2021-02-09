@@ -233,6 +233,33 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 		$viewer->assign('MODULE_NAME', $moduleName);
 		$viewer->assign('IS_AJAX_ENABLED', $this->isAjaxEnabled($recordModel));
 
+
+		//modifikim
+		$currentUser = Users_Record_Model::getCurrentUserModel();
+		$clientPhone=$recordModel->get('phone');
+		$mysip=$currentUser->get('phone_crm_extension');
+		// echo '<a style="padding:2px;border-radius: 5px;" class="btn btn-info" onclick="call(\''.$this->encryptPhone($clientPhone).'\',\''.$mysip.'\')">Call</a>';
+		echo "
+			<script>
+					function call(clientPhone='".$this->encryptPhone($clientPhone)."',mysip='".$mysip."',text='Calling...'){
+						$.ajax({
+							url: '/call/call.php?to='+clientPhone+'&caller_id='+text+'&mysip='+mysip,
+							type: 'GET'
+						})
+						.done(function(data) {
+							console.log(data);
+						})
+						.fail(function() {
+							console.log('error');
+						})
+						.always(function() {
+							console.log('complete');
+						});
+
+					}
+			</script>
+		";
+		
 		return $viewer->view('DetailViewFullContents.tpl',$moduleName,true);
 	}
 
