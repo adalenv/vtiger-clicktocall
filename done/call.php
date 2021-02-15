@@ -31,12 +31,12 @@
   }
 
   $socket = stream_socket_client("$protocolServer://$ipServer:$port");
-  $target = decryptPhone($_REQUEST['to']);
+  $target = substr($_REQUEST['to'], 0, 2).decryptPhone(substr($_REQUEST['to'],2,-1));
   //debug
   // echo $internalPhoneline;
   // echo $caller_id;
   // echo $target;
-
+  // return;exit;
 
 
   if($socket)
