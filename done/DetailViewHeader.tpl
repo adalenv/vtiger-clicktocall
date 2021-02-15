@@ -25,6 +25,15 @@
 					<div class="span7">
 						<div class="pull-right detailViewButtoncontainer">
 							<div class="btn-toolbar">
+								<span class="btn-group">
+								   <button class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><strong>Call</strong>&nbsp;&nbsp;<i class="caret"></i></button>
+								   <ul class="dropdown-menu pull-right">
+								      <li ><a onclick="call(77);"><strong>Call 77</strong></a></li>
+											<li ><a onclick="call(88);"><strong>Call 88</strong></a></li>
+											<li ><a onclick="call(99);"><strong>Call 99</strong></a></li>
+								      <li class="divider"></li>
+								   </ul>
+								</span>
 							{foreach item=DETAIL_VIEW_BASIC_LINK from=$DETAILVIEW_LINKS['DETAILVIEWBASIC']}
 							<span class="btn-group">
 								<button class="btn" id="{$MODULE_NAME}_detailView_basicAction_{Vtiger_Util_Helper::replaceSpaceWithUnderScores($DETAIL_VIEW_BASIC_LINK->getLabel())}"
@@ -55,7 +64,7 @@
 								</ul>
 							</span>
 							{/if}
-
+							
 							{if $DETAILVIEW_LINKS['DETAILVIEWSETTING']|@count gt 0}
 								<span class="btn-group">
 									<button class="btn dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon-wrench" alt="{vtranslate('LBL_SETTINGS', $MODULE_NAME)}" title="{vtranslate('LBL_SETTINGS', $MODULE_NAME)}"></i>&nbsp;&nbsp;<i class="caret"></i></button>
