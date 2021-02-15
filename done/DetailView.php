@@ -28,15 +28,27 @@ class Leads_DetailView_Model extends Accounts_DetailView_Model {
 ///modifikim
 			$basicActionLink = array(
 				'linktype' => 'DETAILVIEWBASIC',
-				'linklabel' => 'Call',
-				'linkurl' => 'call();',
+				'linklabel' => 'Call 77',
+				'linkurl' => 'call(77);',
 				'linkicon' => ''
 			);
 			$linkModelList['DETAILVIEWBASIC'][] = Vtiger_Link_Model::getInstanceFromValues($basicActionLink);
 
+			$basicActionLink = array(
+				'linktype' => 'DETAILVIEWBASIC',
+				'linklabel' => 'Call 88',
+				'linkurl' => 'call(88);',
+				'linkicon' => ''
+			);
+			$linkModelList['DETAILVIEWBASIC'][] = Vtiger_Link_Model::getInstanceFromValues($basicActionLink);
 
-
-
+			$basicActionLink = array(
+				'linktype' => 'DETAILVIEWBASIC',
+				'linklabel' => 'Call 99',
+				'linkurl' => 'call(99);',
+				'linkicon' => ''
+			);
+			$linkModelList['DETAILVIEWBASIC'][] = Vtiger_Link_Model::getInstanceFromValues($basicActionLink);
 
 		if($currentUserModel->hasModulePermission($emailModuleModel->getId())) {
 			$basicActionLink = array(
