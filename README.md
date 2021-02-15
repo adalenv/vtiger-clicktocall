@@ -16,6 +16,9 @@ to add call button
 /var/www/html/vtigercrm/modules\Leads\models\DetailView.php
 
 
+DetailViewHeader.tpl path
+\vtigercrm\layouts\vlayout\modules\Vtiger
+
 
 ---------------------------------------------------------------------------
 
