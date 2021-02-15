@@ -25,7 +25,7 @@
 					<div class="span7">
 						<div class="pull-right detailViewButtoncontainer">
 							<div class="btn-toolbar">
-								//modifikim
+								<!-- modifikim -->
 								<span class="btn-group">
 								   <button class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><strong>Call</strong>&nbsp;&nbsp;<i class="caret"></i></button>
 								   <ul class="dropdown-menu pull-right">
