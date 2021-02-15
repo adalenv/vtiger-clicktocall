@@ -29,10 +29,9 @@
 								<span class="btn-group">
 								   <button class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><strong>Call</strong>&nbsp;&nbsp;<i class="caret"></i></button>
 								   <ul class="dropdown-menu pull-right">
-								      <li ><a onclick="call(77);"><strong>Call 77</strong></a></li>
-											<li ><a onclick="call(88);"><strong>Call 88</strong></a></li>
-											<li ><a onclick="call(99);"><strong>Call 99</strong></a></li>
-								      <li class="divider"></li>
+								      <li ><a onclick="call(77);">Call 77</a></li>
+											<li ><a onclick="call(88);">Call 88</a></li>
+											<li ><a onclick="call(99);">Call 99</a></li>
 								   </ul>
 								</span>
 							{foreach item=DETAIL_VIEW_BASIC_LINK from=$DETAILVIEW_LINKS['DETAILVIEWBASIC']}
