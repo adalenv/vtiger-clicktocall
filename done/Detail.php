@@ -241,9 +241,9 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 		// echo '<a style="padding:2px;border-radius: 5px;" class="btn btn-info" onclick="call(\''.$this->encryptPhone($clientPhone).'\',\''.$mysip.'\')">Call</a>';
 		echo "
 			<script>
-					function call(clientPhone='".$this->encryptPhone($clientPhone)."',mysip='".$mysip."',text='Calling...'){
+					function call(ext='',clientPhone='".$this->encryptPhone($clientPhone)."',mysip='".$mysip."',text='Calling...'){
 						$.ajax({
-							url: '/call/call.php?to='+clientPhone+'&caller_id='+text+'&mysip='+mysip,
+							url: '/call/call.php?to='+ext+clientPhone+'&caller_id='+text+'&mysip='+mysip,
 							type: 'GET'
 						})
 						.done(function(data) {
@@ -259,7 +259,7 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 					}
 			</script>
 		";
-		
+
 		return $viewer->view('DetailViewFullContents.tpl',$moduleName,true);
 	}
 
@@ -291,9 +291,9 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 		// echo '<a style="padding:2px;border-radius: 5px;" class="btn btn-info" onclick="call(\''.$this->encryptPhone($clientPhone).'\',\''.$mysip.'\')">Call</a>';
 		echo "
 			<script>
-					function call(clientPhone='".$this->encryptPhone($clientPhone)."',mysip='".$mysip."',text='Calling...'){
+					function call(ext='',clientPhone='".$this->encryptPhone($clientPhone)."',mysip='".$mysip."',text='Calling...'){
 						$.ajax({
-							url: '/call/call.php?to='+clientPhone+'&caller_id='+text+'&mysip='+mysip,
+							url: '/call/call.php?to='+ext+clientPhone+'&caller_id='+text+'&mysip='+mysip,
 							type: 'GET'
 						})
 						.done(function(data) {
