@@ -25,6 +25,7 @@
 					<div class="span7">
 						<div class="pull-right detailViewButtoncontainer">
 							<div class="btn-toolbar">
+								//modifikim
 								<span class="btn-group">
 								   <button class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><strong>Call</strong>&nbsp;&nbsp;<i class="caret"></i></button>
 								   <ul class="dropdown-menu pull-right">
@@ -64,7 +65,7 @@
 								</ul>
 							</span>
 							{/if}
-							
+
 							{if $DETAILVIEW_LINKS['DETAILVIEWSETTING']|@count gt 0}
 								<span class="btn-group">
 									<button class="btn dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon-wrench" alt="{vtranslate('LBL_SETTINGS', $MODULE_NAME)}" title="{vtranslate('LBL_SETTINGS', $MODULE_NAME)}"></i>&nbsp;&nbsp;<i class="caret"></i></button>
